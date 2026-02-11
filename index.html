@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .yes {
+      background-color: #ff4d6d;
+      color: white;
+    }
+
+    .no {
+      background-color: #555;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hey My Love ❤️</h1>
+    <p>
+      I just have one important question for you…
+    </p>
+    <h1>Will you be my Valentine? 💌</h1>
+
+    <button class="yes" onclick="yesClick()">Yes 💕</button>
+    <button class="no" onclick="noClick()">No 😏</button>
+  </div>
+
+  <script>
+    function yesClick() {
+      alert("YAY ❤️ Happy Valentine’s Day, my love 🥰");
+    }
+
+    function noClick() {
+      alert("You don’t really have an option 😌❤️");
+    }
+  </script>
+</body>
+</html>
