@@ -25,8 +25,8 @@
     text-align: center;
     box-shadow: 0 0 40px rgba(255, 105, 180, 0.6);
     animation: popIn 1.5s ease;
-    z-index: 2;
     max-width: 420px;
+    z-index: 2;
   }
 
   h1 {
@@ -111,8 +111,8 @@
 <div class="card">
   <h1>Hey My Favorite Person ❤️</h1>
   <p>
-    You make my days brighter and my life better.<br>
-    So here’s the big question…
+    You make my life brighter just by being in it.<br>
+    So I need to ask you something important…
   </p>
 
   <h1>Will you be my Valentine? 💌</h1>
@@ -140,7 +140,7 @@
     alert("You don’t have an option, bitch 😌❤️");
   }
 
-  // Floating hearts generator
+  // Floating hearts
   setInterval(() => {
     const heart = document.createElement("div");
     heart.className = "heart";
@@ -153,14 +153,14 @@
     setTimeout(() => heart.remove(), 7000);
   }, 300);
 
-  // Confetti effect
+  // Confetti
   function confetti() {
     for (let i = 0; i < 120; i++) {
       const conf = document.createElement("div");
       conf.style.position = "absolute";
       conf.style.width = "8px";
       conf.style.height = "8px";
-      conf.style.background = `hsl(${Math.random()*360},100%,70%)`;
+      conf.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;
       conf.style.left = Math.random() * 100 + "vw";
       conf.style.top = "-10px";
       conf.style.animation = "floatUp 3s linear";
